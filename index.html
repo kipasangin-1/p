@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Last</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 1) MUSIC PAGE -->
+      <div class="card center" id="musicPage">
+        <h1>Pilih dulu</h1>
+        <p class="sub">Pilih satu aja jgn smw</p>
+
+        <div class="music-buttons">
+          <button class="btn ghost music-btn" data-track="song1">
+            end of beginning
+          </button>
+          <button class="btn ghost music-btn" data-track="song2">17</button>
+          <button class="btn ghost music-btn" data-track="song3">
+            someone to stay
+          </button>
+        </div>
+
+        <button class="btn" id="continueBtn" disabled>Lanjut</button>
+      </div>
+
+      <!-- 2) PUZZLE PAGE -->
+      <div class="card center hidden" id="puzzlePage">
+        <p class="sub">susun dulu ini.</p>
+
+        <div class="puzzle" id="puzzle"></div>
+        <p class="status" id="status"></p>
+      </div>
+
+      <!-- 3) CONTENT PAGE (placeholder dulu) -->
+      <div class="card hidden" id="contentPage">
+        <h1>hai</h1>
+        <p class="sub">last</p>
+
+        <!-- CAROUSEL -->
+        <div class="carousel">
+          <button class="cbtn prev" id="prevBtn" aria-label="Sebelumnya">
+            ‹
+          </button>
+
+          <div class="stage" id="stage">
+            <!-- media dirender dari JS -->
+          </div>
+
+          <button class="cbtn next" id="nextBtn2" aria-label="Berikutnya">
+            ›
+          </button>
+        </div>
+
+        <div class="meta">
+          <div class="caption" id="caption"></div>
+          <div class="counter" id="counter"></div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- LONG TEXT -->
+        <div class="letter"></div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal hidden" id="winModal">
+      <div class="modal-card">
+        <h2>ok</h2>
+        <p id="modalText">lanjut y</p>
+
+        <div class="modal-actions">
+          <button class="btn ghost" id="stayBtn">gmw</button>
+          <button class="btn" id="nextBtn">y</button>
+        </div>
+      </div>
+    </div>
+
+    <audio id="bgm" loop></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
